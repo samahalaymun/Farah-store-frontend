@@ -13,17 +13,17 @@ const Home = () => {
     {
       title: "Wedding Accessories",
       description: " All Accessories you need in your big day",
-      image: "/images/WeddingAccessories.png",
+      image: process.env.PUBLIC_URL + "/images/WeddingAccessories.png",
     },
     {
       title: "Women Shoes",
       description: "Heels, sandals, boots, and more you can find in our store",
-      image: "/images/WomenShoes.png",
+      image: process.env.PUBLIC_URL + "/images/WomenShoes.png",
     },
     {
       title: "Wedding Accessories",
       description: " All Accessories you need in your big day",
-      image: "/images/WeddingAccessories.png",
+      image: process.env.PUBLIC_URL + "/images/WeddingAccessories.png",
     },
   ];
   return (

@@ -9,7 +9,7 @@ function ProductCard(props) {
     <Link to="/contact" className="product-card position-relative ">
       <div className="wishlist-icon position-absolute ">
         <button className="action-btn">
-          <img src="images/wish.svg" alt="wish" />
+          <img src={process.env.PUBLIC_URL + "/images/wish.svg"} alt="wish" />
         </button>
       </div>
       {props.discount && (
@@ -32,7 +32,8 @@ function ProductCard(props) {
           {
             <p
               className={`old-price ${
-                props.discount?'text-decoration-line-through':''}`}
+                props.discount ? "text-decoration-line-through" : ""
+              }`}
             >
               ₪{props.price}
             </p>
@@ -41,17 +42,26 @@ function ProductCard(props) {
       </div>
       <div className="action-bar position-absolute ">
         <div className="d-flex flex-column gap-15">
-          <button className="action-btn" onClick={(event)=>{
+          <button
+            className="action-btn"
+            onClick={(event) => {
               event.preventDefault();
-              console.log("clicked")
-          }}>
-            <img src="images/prodcompare.svg" alt="compare" />
+              console.log("clicked");
+            }}
+          >
+            <img
+              src={process.env.PUBLIC_URL + "/images/prodcompare.svg"}
+              alt="compare"
+            />
           </button>
           <button className="action-btn">
-            <img src="images/view.svg" alt="view" />
+            <img src={process.env.PUBLIC_URL + "/images/view.svg"} alt="view" />
           </button>
           <button className="action-btn">
-            <img src="images/add-cart.svg" alt="addCart" />
+            <img
+              src={process.env.PUBLIC_URL + "/images/add-cart.svg"}
+              alt="addCart"
+            />
           </button>
         </div>
       </div>

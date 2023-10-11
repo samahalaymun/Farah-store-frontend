@@ -23,7 +23,7 @@ function BlogSection() {
           <SwiperWrapper slidesNum={3}>
             <SwiperSlide>
               <BlogCard
-                img="images/blog-1.jpg"
+                img={process.env.PUBLIC_URL + "/images/blog-1.jpg"}
                 date="1 dec 2022"
                 title="beautiful monday morning"
                 desc="It is a long established fact that a reader will be distracted by the"
@@ -31,7 +31,7 @@ function BlogSection() {
             </SwiperSlide>
             <SwiperSlide>
               <BlogCard
-                img="images/blog-1.jpg"
+                img={process.env.PUBLIC_URL + "/images/blog-1.jpg"}
                 date="1 dec 2022"
                 title="beautiful monday morning"
                 desc="It is a long established fact that a reader will be distracted by the"
@@ -39,7 +39,7 @@ function BlogSection() {
             </SwiperSlide>
             <SwiperSlide>
               <BlogCard
-                img="images/blog-1.jpg"
+                img={process.env.PUBLIC_URL + "/images/blog-1.jpg"}
                 date="1 dec 2022"
                 title="beautiful monday morning"
                 desc="It is a long established fact that a reader will be distracted by the"
@@ -47,7 +47,7 @@ function BlogSection() {
             </SwiperSlide>
             <SwiperSlide>
               <BlogCard
-                img="images/blog-1.jpg"
+                img={process.env.PUBLIC_URL + "/images/blog-1.jpg"}
                 date="1 dec 2022"
                 title="beautiful monday morning"
                 desc="It is a long established fact that a reader will be distracted by the"
@@ -55,7 +55,7 @@ function BlogSection() {
             </SwiperSlide>
             <SwiperSlide>
               <BlogCard
-                img="images/blog-1.jpg"
+                img={process.env.PUBLIC_URL + "/images/blog-1.jpg"}
                 date="1 dec 2022"
                 title="beautiful monday morning"
                 desc="It is a long established fact that a reader will be distracted by the"
@@ -63,7 +63,7 @@ function BlogSection() {
             </SwiperSlide>
             <SwiperSlide>
               <BlogCard
-                img="images/blog-1.jpg"
+                img={process.env.PUBLIC_URL + "/images/blog-1.jpg"}
                 date="1 dec 2022"
                 title="beautiful monday morning"
                 desc="It is a long established fact that a reader will be distracted by the"
@@ -71,7 +71,7 @@ function BlogSection() {
             </SwiperSlide>
             <SwiperSlide>
               <BlogCard
-                img="images/blog-1.jpg"
+                img={process.env.PUBLIC_URL + "/images/blog-1.jpg"}
                 date="1 dec 2022"
                 title="beautiful monday morning"
                 desc="It is a long established fact that a reader will be distracted by the"

@@ -9,26 +9,38 @@ function CategoriesSection() {
           <li>
             <CategoryCard
               catName="Accessories"
-              image="/images/accessories-cat.jpg"
+              image={process.env.PUBLIC_URL + "/images/accessories-cat.jpg"}
             />
           </li>
           <li>
             <CategoryCard
               catName="wedding Shoes"
-              image="/images/wedding-shoes.webp"
+              image={process.env.PUBLIC_URL + "/images/wedding-shoes.webp"}
             />
           </li>
           <li>
-            <CategoryCard catName="Sandals" image="/images/sandals.webp" />
+            <CategoryCard
+              catName="Sandals"
+              image={process.env.PUBLIC_URL + "/images/sandals.webp"}
+            />
           </li>
           <li>
-            <CategoryCard catName="casual shoes" image="/images/casual.webp" />
+            <CategoryCard
+              catName="casual shoes"
+              image={process.env.PUBLIC_URL + "/images/casual.webp"}
+            />
           </li>
           <li>
-            <CategoryCard catName="Corset" image="/images/corset.webp" />
+            <CategoryCard
+              catName="Corset"
+              image={process.env.PUBLIC_URL + "/images/corset.webp"}
+            />
           </li>
           <li>
-            <CategoryCard catName="Bags" image="/images/bags.jpg" />
+            <CategoryCard
+              catName="Bags"
+              image={process.env.PUBLIC_URL + "/images/bags.jpg"}
+            />
           </li>
         </ul>
       </div>

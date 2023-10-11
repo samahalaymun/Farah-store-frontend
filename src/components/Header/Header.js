@@ -12,7 +12,7 @@ const onCheckBoxChecked = () => {
     const showSideBar = () => {
       document.getElementsByClassName("menu-bottom")[0].style.left = "0px";
       document.getElementsByClassName("checkBtn")[0].style.position =
-        "absolute";
+        "fixed";
       document.getElementsByClassName("checkBtn")[0].style.left = "90%";
        document.getElementsByClassName("close-overlay")[0].style.display =
          "block";

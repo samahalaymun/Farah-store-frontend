@@ -20,7 +20,7 @@ function ProductsSection() {
           <SwiperWrapper>
             <SwiperSlide>
               <ProductCard
-                img="images/crown-logo.webp"
+                img={process.env.PUBLIC_URL + "/images/crown-logo.webp"}
                 brand="Farah"
                 title="Crown silver"
                 price="150"
@@ -28,16 +28,16 @@ function ProductsSection() {
             </SwiperSlide>
             <SwiperSlide>
               <ProductCard
-                img="images/bags.jpg"
+                img={process.env.PUBLIC_URL + "/images/bags.jpg"}
                 brand="Farah"
                 title="leather white bag"
                 price="100"
-                discount={0.20}
+                discount={0.2}
               />
             </SwiperSlide>
             <SwiperSlide>
               <ProductCard
-                img="images/corset.webp"
+                img={process.env.PUBLIC_URL + "/images/corset.webp"}
                 brand="Farah"
                 title="black corset"
                 price="250"
@@ -45,7 +45,7 @@ function ProductsSection() {
             </SwiperSlide>
             <SwiperSlide>
               <ProductCard
-                img="images/heels.webp"
+                img={process.env.PUBLIC_URL + "/images/heels.webp"}
                 brand="Camden"
                 title="white camden heels"
                 price="150"
@@ -53,7 +53,7 @@ function ProductsSection() {
             </SwiperSlide>
             <SwiperSlide>
               <ProductCard
-                img="images/crown-logo.webp"
+                img={process.env.PUBLIC_URL + "/images/crown-logo.webp"}
                 brand="Farah"
                 title="Crown silver"
                 price="150"
@@ -61,7 +61,7 @@ function ProductsSection() {
             </SwiperSlide>
             <SwiperSlide>
               <ProductCard
-                img="images/crown-logo.webp"
+                img={process.env.PUBLIC_URL + "/images/crown-logo.webp"}
                 brand="Farah"
                 title="Crown silver"
                 price="150"

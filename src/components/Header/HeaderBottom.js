@@ -17,11 +17,8 @@ function HeaderBottom({ setChecked }) {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <img src="/images/menu.svg" />
-                    <span className="me-5 d-inline-block">
-                      {" "}
-                      shop categories
-                    </span>
+                    <img src={process.env.PUBLIC_URL + "/images/menu.svg"} />
+                    <span className="me-5 d-inline-block">shop categories</span>
                   </button>
                   <ul
                     className="dropdown-menu"
@@ -78,7 +75,9 @@ function HeaderBottom({ setChecked }) {
                 <NavLink to="/" onClick={() => setChecked(false)}>
                   About Us
                 </NavLink>
-                <NavLink onClick={() => setChecked(false)}><AiOutlineHeart className="fs-5"/> Wishlist</NavLink>
+                <NavLink onClick={() => setChecked(false)}>
+                  <AiOutlineHeart className="fs-5" /> Wishlist
+                </NavLink>
               </div>
             </div>
           </div>

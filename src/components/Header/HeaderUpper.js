@@ -9,10 +9,7 @@ function HeaderUpper({ onNavCheck, isChecked}) {
       <div className="container-xxl ">
         <div className="row d-flex align-items-center flex-wrap">
           <div className="col-lg-2 col-md-2 col-12 d-flex align-items-center ">
-            <ToggleNav
-              onCheck={onNavCheck}
-              isChecked={isChecked}
-            />
+            <ToggleNav onCheck={onNavCheck} isChecked={isChecked} />
             <h2>
               <Link className="logo">FARAH55</Link>
             </h2>
@@ -29,7 +26,10 @@ function HeaderUpper({ onNavCheck, isChecked}) {
             <div className=" d-flex align-items-center justify-content-between">
               <div className="">
                 <Link className="d-flex align-items-center gap-10 text-white header-upper-link">
-                  <img src="/images/compare.svg" alt="compare" />
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/compare.svg"}
+                    alt="compare"
+                  />
                   <span className="mb-0 header-upper-link-text">
                     Compare
                     <br /> Products
@@ -38,7 +38,10 @@ function HeaderUpper({ onNavCheck, isChecked}) {
               </div>
               <div className="">
                 <Link className="d-flex align-items-center  gap-10 text-white header-upper-link">
-                  <img src="/images/wishlist.svg" alt="wishlist" />
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/wishlist.svg"}
+                    alt="wishlist"
+                  />
                   <span className="mb-0 header-upper-link-text">
                     Favourite
                     <br /> Wishlist
@@ -47,7 +50,10 @@ function HeaderUpper({ onNavCheck, isChecked}) {
               </div>
               <div className="">
                 <Link className="d-flex align-items-center  gap-10 text-white header-upper-link">
-                  <img src="/images/user.svg" alt="user" />
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/user.svg"}
+                    alt="user"
+                  />
                   <span className="mb-0 header-upper-link-text">
                     Login
                     <br /> My Account
@@ -56,7 +62,10 @@ function HeaderUpper({ onNavCheck, isChecked}) {
               </div>
               <div className="">
                 <Link className="d-flex align-items-center  gap-10 text-white header-upper-link">
-                  <img src="/images/cart.svg" alt="cart" />
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/cart.svg"}
+                    alt="cart"
+                  />
                   <div className="d-flex flex-column gap-10">
                     <span className="badge bg-white text-dark  ">0</span>
                     <span className="total-amount mb-0 header-upper-link-text">
