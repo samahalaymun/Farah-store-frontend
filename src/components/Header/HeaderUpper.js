@@ -14,7 +14,7 @@ function HeaderUpper({ onNavCheck, isChecked}) {
               isChecked={isChecked}
             />
             <h2>
-              <Link className="text-gold logo">FARAH55</Link>
+              <Link className="logo">FARAH55</Link>
             </h2>
           </div>
           <div className="col-lg-5 col-md-5 col-12">

@@ -2,54 +2,33 @@ import React from 'react'
 import MainBannerCard from '../MainBannerCard'
 import "../Carousel/Carousel.css"
 
-function Carousel() {
-    const items = [
-      {
-        title: "Wedding Accessories",
-        description: " All Accessories you need in your big day",
-        image: "/images/WeddingAccessories.png",
-      },
-      {
-        title: "Women Shoes",
-        description: "Heels, sandals, boots, and more you can find in our store",
-        image: "/images/WomenShoes.png",
-      },
-      {
-        title: "Wedding Accessories",
-        description: " All Accessories you need in your big day",
-        image: "/images/WeddingAccessories.png",
-      },
-    ];
+function Carousel({ children}) {
+  console.log(children.length)
   return (
     <div
       id="carouselExampleInterval"
-      className="carousel slide"
+      className="carousel slide "
       data-bs-ride="carousel"
     >
       <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
+      {
+        children.map((item,index)=>{
+          return (
+            <button
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide-to={index}
+              class={index == 0 ? "active" : ""}
+              aria-current="true"
+              aria-label={`Slide ${index+1}`}
+            ></button>
+          );
+        })
+      }
+       
       </div>
       <div className="carousel-inner">
-        <div className="carousel-item active" data-bs-interval="10000">
+        {/* <div className="carousel-item active" data-bs-interval="10000">
           <MainBannerCard
             title={items[0].title}
             description={items[0].description}
@@ -69,7 +48,8 @@ function Carousel() {
             description={items[0].description}
             image={items[0].image}
           />
-        </div>
+        </div> */}
+        {children}
       </div>
       <button
         className="carousel-control-prev"

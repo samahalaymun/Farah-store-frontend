@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import {AiOutlineHeart} from "react-icons/ai"
 function HeaderBottom({ setChecked }) {
   return (
     <div className="header-bottom py-lg-3 py-0">
@@ -77,7 +78,7 @@ function HeaderBottom({ setChecked }) {
                 <NavLink to="/" onClick={() => setChecked(false)}>
                   About Us
                 </NavLink>
-                <NavLink onClick={() => setChecked(false)}>Wishlist</NavLink>
+                <NavLink onClick={() => setChecked(false)}><AiOutlineHeart className="fs-5"/> Wishlist</NavLink>
               </div>
             </div>
           </div>

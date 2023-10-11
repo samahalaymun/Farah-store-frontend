@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 function MainBannerCard({ title, description, image,link }) {
   return (
-      <div className="main-banner position-relative ">
+    <div className="main-banner position-relative ">
+      <div className='main-banner-inner'>
         <img src={image} alt="main banner" className=" " />
         <div className="main-banner-content position-absolute ">
           <h4 className="banner-content-header">{title}</h4>
@@ -11,6 +12,7 @@ function MainBannerCard({ title, description, image,link }) {
           <Link className="btn btn-primary">Shop Now</Link>
         </div>
       </div>
+    </div>
   );
 }
 

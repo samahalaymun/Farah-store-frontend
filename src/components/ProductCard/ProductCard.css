@@ -1,0 +1,146 @@
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  width: 290px;
+  box-shadow: 0 0 10px #0000001a;
+  overflow: hidden;
+}
+.product-card:hover .action-bar{
+    right: 20px;
+}
+.product-card .product-img {
+  width: 100%;
+  height: 339px;
+}
+.product-card .product-img img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  object-fit: fill;
+}
+.product-details{
+    padding: 15px;
+}
+.product-details h6{
+    color: var(--color-gold);
+    font-size: 13px;
+
+}
+.product-details h5{
+    font-size: 15px;
+    color: var( --color-131921);
+
+}
+.product-details .price{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.product-details .price .current-price{
+    color: red;
+}
+.product-details .price .old-price{
+    color: var(--color-dark-gray);
+}
+.action-bar{
+    right: -53px;
+    top: 18%;
+    transition: 0.3s;
+}
+.action-btn{
+    border: none;
+    background-color: white;
+    color: var(--color-theme-primary);
+    padding: 10px;
+    border-radius: 50%;
+     width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.wishlist-icon{
+    top: 3%;
+    right: 20px;
+}
+.discount-icon{
+    background-color: var(--color-gold);
+    padding:5px 10px;
+    border-radius: 10px;
+    top: 3%;
+    left: 15px;
+}
+.discount-icon span{
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-131921);
+}
+@media (max-width: 900px) {
+ .product-card{
+    width: 200px;
+ }
+ .product-card .product-img{
+    height: 250px;
+ }
+ .action-bar{
+    top: 20%;
+    right: 20px;
+}
+.action-btn{
+   
+    width: 40px;
+    height: 40px;
+}
+}
+@media (max-width: 550px) {
+ .product-card{
+    width: 160px;
+ }
+ .product-card .product-img{
+    height: 200px;
+ }
+ .product-details .price{
+    font-size: 14px;
+ }
+ .product-details h6{
+    font-size: 11px;
+
+}
+.action-btn{
+    padding: 8px;
+    width: 30px;
+    height: 30px;
+}
+.action-btn img ,.wishlist-icon img{
+    width: 15px;
+    height: 15px;
+}
+.product-details h5{
+    font-size: 12px;
+
+}
+.action-bar div{
+    gap: 10px;
+}
+.action-bar{
+    top: 18%;
+    right: 20px;
+}
+.discount-icon{
+    padding:2px 5px;
+    left:0;
+    top: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.discount-icon span{
+    font-weight: 400;
+    font-size: 10px;
+}
+}
