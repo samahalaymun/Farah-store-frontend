@@ -9,10 +9,10 @@ function Carousel({ children}) {
       id="carouselExampleInterval"
       className="carousel slide "
       data-bs-ride="carousel"
+      data-bs-touch="true"
     >
       <div class="carousel-indicators">
-      {
-        children.map((item,index)=>{
+        {children.map((item, index) => {
           return (
             <button
               type="button"
@@ -20,37 +20,12 @@ function Carousel({ children}) {
               data-bs-slide-to={index}
               class={index == 0 ? "active" : ""}
               aria-current="true"
-              aria-label={`Slide ${index+1}`}
+              aria-label={`Slide ${index + 1}`}
             ></button>
           );
-        })
-      }
-       
+        })}
       </div>
-      <div className="carousel-inner">
-        {/* <div className="carousel-item active" data-bs-interval="10000">
-          <MainBannerCard
-            title={items[0].title}
-            description={items[0].description}
-            image={items[0].image}
-          />
-        </div>
-        <div className="carousel-item" data-bs-interval="2000">
-          <MainBannerCard
-            title={items[1].title}
-            description={items[1].description}
-            image={items[1].image}
-          />
-        </div>
-        <div className="carousel-item">
-          <MainBannerCard
-            title={items[0].title}
-            description={items[0].description}
-            image={items[0].image}
-          />
-        </div> */}
-        {children}
-      </div>
+      <div className="carousel-inner">{children}</div>
       <button
         className="carousel-control-prev"
         type="button"

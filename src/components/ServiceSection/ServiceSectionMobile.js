@@ -9,7 +9,7 @@ import { IoHelpBuoyOutline } from "react-icons/io5";
 function ServiceSectionMobile() {
   return (
     <div className="mobile-services-carousel d-md-none">
-      <Carousel>
+      <Carousel >
         <div className="carousel-item active">
           <ServiceCard
             title="Free shipping"
