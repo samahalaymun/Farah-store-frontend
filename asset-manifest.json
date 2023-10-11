@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Farah-store-frontend/static/css/main.ad97d947.css",
-    "main.js": "/Farah-store-frontend/static/js/main.62ff5583.js",
+    "main.js": "/Farah-store-frontend/static/js/main.5600ff63.js",
     "index.html": "/Farah-store-frontend/index.html",
     "main.ad97d947.css.map": "/Farah-store-frontend/static/css/main.ad97d947.css.map",
-    "main.62ff5583.js.map": "/Farah-store-frontend/static/js/main.62ff5583.js.map"
+    "main.5600ff63.js.map": "/Farah-store-frontend/static/js/main.5600ff63.js.map"
   },
   "entrypoints": [
     "static/css/main.ad97d947.css",
-    "static/js/main.62ff5583.js"
+    "static/js/main.5600ff63.js"
   ]
 }
