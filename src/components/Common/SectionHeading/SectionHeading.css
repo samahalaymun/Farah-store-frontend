@@ -1,6 +1,13 @@
-.section-heading{
+.section-heading h3{
     font-size: 26px;
     line-height: 32px;
     font-weight: 500;
     margin-bottom: 30px;
+}
+
+@media (max-width: 550px) {
+   .section-heading h3{
+    font-size: 18px;
+   
+}
 }

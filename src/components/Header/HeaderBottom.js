@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import {AiOutlineHeart} from "react-icons/ai"
+import { AiOutlineHeart } from "react-icons/ai";
+import DropDown from "../Common/DropDown/DropDown";
 function HeaderBottom({ setChecked }) {
   return (
     <div className="header-bottom py-lg-3 py-0">
@@ -8,39 +9,16 @@ function HeaderBottom({ setChecked }) {
         <div className="row">
           <div className="col-12">
             <div className="menu-bottom">
-              <div className="dropdown-wrapper">
-                <div className="dropdown">
-                  <button
-                    className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center "
-                    type="button"
-                    id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <img src={process.env.PUBLIC_URL + "/images/menu.svg"} />
-                    <span className="me-5 d-inline-block">shop categories</span>
-                  </button>
-                  <ul
-                    className="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton1"
-                  >
-                    <li>
-                      <Link className="dropdown-item text-white" to="#">
-                        Action
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item text-white" to="#">
-                        Another action
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item text-white" to="#">
-                        Something else here
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+              <div className="header-drop-down">
+                <DropDown
+                  id="headerDropDown"
+                  label="shop categories"
+                  options={["Accessories", "Shoes", "Bags", "Corset"]}
+                  logo={process.env.PUBLIC_URL + "/images/menu.svg"}
+                  className="btn btn-secondary dropdown-toggle bg-transparent
+                 border-0 gap-15 d-flex align-items-center"
+                  ulClassName="headerDropDown"
+                />
               </div>
               <h3 className="mobile-menu-header mb-0">MENU</h3>
               <div className=" mobile-menu-links">

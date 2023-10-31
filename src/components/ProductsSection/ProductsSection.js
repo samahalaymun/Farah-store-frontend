@@ -9,13 +9,13 @@ import "swiper/css/pagination";
 import SwiperWrapper from "../Swiper/SwiperWrapper";
 import ProductCard from "../ProductCard/ProductCard";
 
-function ProductsSection() {
+function ProductsSection({header}) {
   return (
-    <section className=" py-5">
+    <section className=" py-4">
       <div className="container-xxl ">
         <div className="row">
           <div className="col-12">
-            <SectionHeading header="Featured Products" />
+            <SectionHeading header={header} />
           </div>
           <SwiperWrapper>
             <SwiperSlide>
@@ -24,6 +24,8 @@ function ProductsSection() {
                 brand="Farah"
                 title="Crown silver"
                 price="150"
+                className="home-card-wrapper"
+                rating={3}
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -33,6 +35,8 @@ function ProductsSection() {
                 title="leather white bag"
                 price="100"
                 discount={0.2}
+                className="home-card-wrapper"
+                rating={3.5}
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -41,6 +45,8 @@ function ProductsSection() {
                 brand="Farah"
                 title="black corset"
                 price="250"
+                className="home-card-wrapper"
+                rating={0}
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -49,6 +55,8 @@ function ProductsSection() {
                 brand="Camden"
                 title="white camden heels"
                 price="150"
+                className="home-card-wrapper"
+                rating={2.5}
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -57,6 +65,8 @@ function ProductsSection() {
                 brand="Farah"
                 title="Crown silver"
                 price="150"
+                className="home-card-wrapper"
+                rating={4}
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -65,6 +75,8 @@ function ProductsSection() {
                 brand="Farah"
                 title="Crown silver"
                 price="150"
+                className="home-card-wrapper"
+                rating={5}
               />
             </SwiperSlide>
           </SwiperWrapper>

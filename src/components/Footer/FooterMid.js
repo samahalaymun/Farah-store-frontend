@@ -13,10 +13,10 @@ function FooterMid() {
             <FooterLinkHeader text="Contact Us" />
             <div className="footer-links d-flex flex-column ">
               <FooterLink text="Demo Store" />
-              <address className=" text-white py-2 mb-1">
+              <address className=" py-2 mb-1">
                 Rafedia Street, Nablus, Palestine
               </address>
-              <a href="tel:+972599753342" className="text-white py-2 mb-1">
+              <a href="tel:+972599753342" className=" py-2 mb-1">
                 +972599753342
               </a>
               <a

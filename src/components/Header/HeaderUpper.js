@@ -25,7 +25,10 @@ function HeaderUpper({ onNavCheck, isChecked}) {
           <div className="col-lg-5 col-md-5 col-12 header-upper-links">
             <div className=" d-flex align-items-center justify-content-between">
               <div className="">
-                <Link className="d-flex align-items-center gap-10 text-white header-upper-link">
+                <Link
+                  to="/compare"
+                  className="d-flex align-items-center gap-10 text-white header-upper-link"
+                >
                   <img
                     src={process.env.PUBLIC_URL + "/images/compare.svg"}
                     alt="compare"
@@ -37,7 +40,10 @@ function HeaderUpper({ onNavCheck, isChecked}) {
                 </Link>
               </div>
               <div className="">
-                <Link className="d-flex align-items-center  gap-10 text-white header-upper-link">
+                <Link
+                  to="/wishlist"
+                  className="d-flex align-items-center  gap-10 text-white header-upper-link"
+                >
                   <img
                     src={process.env.PUBLIC_URL + "/images/wishlist.svg"}
                     alt="wishlist"
@@ -49,7 +55,7 @@ function HeaderUpper({ onNavCheck, isChecked}) {
                 </Link>
               </div>
               <div className="">
-                <Link className="d-flex align-items-center  gap-10 text-white header-upper-link">
+                <Link to="/login" className="d-flex align-items-center  gap-10 text-white header-upper-link">
                   <img
                     src={process.env.PUBLIC_URL + "/images/user.svg"}
                     alt="user"
@@ -61,7 +67,7 @@ function HeaderUpper({ onNavCheck, isChecked}) {
                 </Link>
               </div>
               <div className="">
-                <Link className="d-flex align-items-center  gap-10 text-white header-upper-link">
+                <Link to="/cart" className="d-flex align-items-center  gap-10 text-white header-upper-link">
                   <img
                     src={process.env.PUBLIC_URL + "/images/cart.svg"}
                     alt="cart"

@@ -8,7 +8,7 @@ function FooterTop() {
         <div className="row align-items-center ">
           <div className="col-12 col-lg-5">
             <div className="footer-top-data d-flex gap-3 gap-md-4 align-items-center ">
-              <img src="images/newsletter.png" alt="newsletter" />
+              <img src={process.env.PUBLIC_URL +"/images/newsletter.png"} alt="newsletter" />
               <h3 className="text-white mb-0 ">Sign up for newsletter</h3>
             </div>
           </div>

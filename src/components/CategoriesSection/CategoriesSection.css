@@ -1,7 +1,7 @@
 .categories {
   display: flex;
   list-style: none;
-  overflow-x: auto;
+  /* overflow-x: auto; */
   overflow: none;
   column-gap: 20px;
   height: 130px;
@@ -14,9 +14,24 @@
   padding: 10px;
 }
 
-.categories::-webkit-scrollbar {
-  display: none;
+/* .categories::-webkit-scrollbar {
+  width: 10px;
 }
+
+/* Track */
+.categories::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2); */
+  border-radius: 10px;
+
+}
+
+/* Handle */
+.categories::-webkit-scrollbar-thumb {
+  background: var(--color-light-gray);
+  border-top: 6px solid white;
+  border-bottom: 6px solid white;
+} */
+
 .categories li {
   scroll-snap-align: start;
   transition: all 0.2s;
@@ -36,8 +51,6 @@
   height: 100%;
   border-radius: 5px;
   transition: 0.3s ease-in;
-  
-
 }
 .category-card .category-card-content {
   width: 100%;

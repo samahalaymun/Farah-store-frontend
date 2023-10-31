@@ -3,7 +3,7 @@ import "./CategoriesSection.css";
 import CategoryCard from './CategoryCard';
 function CategoriesSection() {
   return (
-    <section className="home-wrapper-3 py-5">
+    <section className="home-wrapper-3 py-4">
       <div className="container-xxl ">
         <ul className="categories">
           <li>
@@ -42,6 +42,7 @@ function CategoriesSection() {
               image={process.env.PUBLIC_URL + "/images/bags.jpg"}
             />
           </li>
+          
         </ul>
       </div>
     </section>

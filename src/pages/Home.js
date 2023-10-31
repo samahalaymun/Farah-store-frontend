@@ -30,7 +30,8 @@ const Home = () => {
     <>
       <MainBanner items={mainBannerItems} />
       <CategoriesSection />
-      <ProductsSection />
+      <ProductsSection header="New Arrivals" />
+      <ProductsSection header="Featured Products" />
       <GallerySection />
       <ServicesSection />
       <BlogSection />

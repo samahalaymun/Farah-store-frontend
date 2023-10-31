@@ -34,8 +34,7 @@ const onCheckBoxChecked = () => {
       }
     }, [checked]);
   return (
-    <header>
-      {/* <HeaderTop onNavCheck={onCheckBoxChecked} isChecked={checked} /> */}
+    <header className="position-sticky header">
       <div className="close-overlay"></div>
       <HeaderUpper
         onNavCheck={onCheckBoxChecked}

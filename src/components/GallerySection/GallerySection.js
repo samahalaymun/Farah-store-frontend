@@ -3,7 +3,7 @@ import "./GallerySection.css";
 
 function GallerySection() {
   return (
-    <section className=" py-5">
+    <section className="pt-4">
       <div className="gallery-wrapper">
         <div className="row gx-0 ">
           <div className="col-lg-6 col-6">

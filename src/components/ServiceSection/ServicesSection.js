@@ -9,7 +9,7 @@ import ServiceSectionMobile from "./ServiceSectionMobile";
 import "./ServiceSection.css";
 function ServicesSection() {
   return (
-    <section className="py-3 py-md-5 home-wrapper-2">
+    <section className="py-3 py-md-4 home-wrapper-2">
       <div className="container-xxl ">
         <div className="row  d-none d-md-flex">
           <div className="col-lg-3 col-md-6 col-12">
