@@ -29,7 +29,7 @@
   color: var(--color-gold);
   font-size: 13px;
 }
-.product-details .rating{
+ .rating{
  color: var(--color-gold);
  font-size: 20px;
 }
@@ -37,18 +37,14 @@
   font-size: 15px;
   color: var(--color-131921);
 }
-.product-details .price {
+ .price {
   font-size: 16px;
   display: flex;
   align-items: center;
   column-gap: 10px;
 }
-.product-details .price .current-price {
-  color: var(--color-red);
-}
-.product-details .price .old-price {
-  color: var(--color-dark-gray);
-}
+
+
 .action-bar {
   right: -53px;
   top: 18%;
@@ -72,24 +68,15 @@
   right: 20px;
 }
 .discount-icon {
-  background-color: var(--color-gold);
-  padding: 5px 10px;
-  border-radius: 10px;
   top: 3%;
   left: 15px;
 }
-.discount-icon span {
-  font-weight: 600;
-  font-size: 14px;
-  color: var(--color-131921);
-}
+
 @media (max-width: 900px) {
   .home-card-wrapper {
     width: 200px;
   }
-  /* .product-card{
-    width: 200px;
- } */
+ 
   .product-card .product-img {
     height: 250px;
   }

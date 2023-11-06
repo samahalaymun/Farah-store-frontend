@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 function BlogCard({ img,date,title,desc }) {
   return (
-    <Link>
       <div className="blog-card">
         <div className="card-img">
           <img src={img} alt="blog" className="img-fluid" />
@@ -12,10 +11,11 @@ function BlogCard({ img,date,title,desc }) {
           <p className="date">{date}</p>
           <h5 className="title">{title}</h5>
           <p className="desc">{desc}</p>
-          <Link className="btn btn-primary ">Read More</Link>
+          <Link className="btn btn-primary" to="/blog/:id">
+            Read More
+          </Link>
         </div>
       </div>
-    </Link>
   );
 }
 

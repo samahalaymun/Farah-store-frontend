@@ -1,0 +1,56 @@
+.auth-modal{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    flex-direction: column;
+    margin: 30px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.auth-modal h3{
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--color-dark-gray);
+}
+.auth-modal a{
+    color: var(--color-dark-gray);
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.auth-modal p{
+    font-size: 13px;
+    color: var(--color-gray);
+}
+.auth-modal .signup{
+    background-color: var(--color-gold);
+    color: var(--color-131921);
+    border: none;
+}
+
+.auth-modal .signup:hover{
+    background-color: var(--color-theme-primary);
+    color: white;
+}
+.signup-footer p{
+    color: var(--color-dark-gray);
+}
+.signup-footer a{
+    color: #0066c0;
+}
+.signup-footer a:hover{
+    color: var(--color-gold);
+    text-decoration: underline;
+}
+@media (max-width: 550px){
+.auth-modal{
+    width: 100%;
+    border-radius: 5px;
+}
+.auth-modal h3{
+    font-size: 16px;
+}
+.auth-modal input{
+    border-radius: 5px !important;
+}
+}

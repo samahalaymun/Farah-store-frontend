@@ -1,0 +1,10 @@
+.discount-label {
+  background-color: var(--color-gold);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.discount-label span {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-131921);
+}

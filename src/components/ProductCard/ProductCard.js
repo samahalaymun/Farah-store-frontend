@@ -1,14 +1,15 @@
 import React from "react";
 import "./ProductCard.css";
 import { Link } from "react-router-dom";
-
+import { rating } from "../../Utils/Utils";
+import DiscountLabel from "../Common/DiscountLabel/DiscountLabel";
 
 function ProductCard(props) {
-const rating = (stars) => "★★★★★☆☆☆☆☆".slice(5 - stars, 10 - stars);
+// const rating = (stars) => "★★★★★☆☆☆☆☆".slice(5 - stars, 10 - stars);
 
   return (
     <div className={`${props.className}`}>
-      <Link to="/contact" className={`product-card position-relative `}>
+      <Link to="/products/:id" className={`product-card position-relative `}>
         <div className="wishlist-icon position-absolute">
           <button className="action-btn">
             <img src={process.env.PUBLIC_URL + "/images/wish.svg"} alt="wish" />
@@ -16,7 +17,7 @@ const rating = (stars) => "★★★★★☆☆☆☆☆".slice(5 - stars, 10 -
         </div>
         {props.discount && (
           <div className="discount-icon position-absolute ">
-            <span>-{props.discount * 100}%</span>
+            <DiscountLabel discount={props.discount} />
           </div>
         )}
         <div className="product-img">
@@ -28,14 +29,16 @@ const rating = (stars) => "★★★★★☆☆☆☆☆".slice(5 - stars, 10 -
           <h6 className="rating">{rating(props.rating)}</h6>
           <div className="price">
             {props.discount && (
-              <p className="current-price">
+              <p className="current-price fw-bold red-text">
                 ₪{props.price - props.price * props.discount}
               </p>
             )}
             {
               <p
                 className={`old-price ${
-                  props.discount ? "text-decoration-line-through" : ""
+                  props.discount
+                    ? "text-decoration-line-through gray-text"
+                    : "dark-gray-text fw-bold"
                 }`}
               >
                 ₪{props.price}
@@ -57,12 +60,12 @@ const rating = (stars) => "★★★★★☆☆☆☆☆".slice(5 - stars, 10 -
                 alt="compare"
               />
             </button>
-            <button className="action-btn">
+            <Link to="/products/:id" className="action-btn">
               <img
                 src={process.env.PUBLIC_URL + "/images/view.svg"}
                 alt="view"
               />
-            </button>
+            </Link>
             <button className="action-btn">
               <img
                 src={process.env.PUBLIC_URL + "/images/add-cart.svg"}

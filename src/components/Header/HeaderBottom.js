@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineHeart } from "react-icons/ai";
 import DropDown from "../Common/DropDown/DropDown";
+import { IoMdClose } from "react-icons/io";
 function HeaderBottom({ setChecked }) {
   return (
     <div className="header-bottom py-lg-3 py-0">
@@ -20,7 +21,11 @@ function HeaderBottom({ setChecked }) {
                   ulClassName="headerDropDown"
                 />
               </div>
-              <h3 className="mobile-menu-header mb-0">MENU</h3>
+
+              <div className="mobile-menu-header mb-0">
+                <h3 className="mb-0">MENU</h3>
+                <IoMdClose className="fs-1 text-white " onClick={() => setChecked(false)} />
+              </div>
               <div className=" mobile-menu-links">
                 <NavLink to="/" onClick={() => setChecked(false)}>
                   Accessories

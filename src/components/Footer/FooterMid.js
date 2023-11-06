@@ -41,19 +41,19 @@ function FooterMid() {
           <div className="col-12 col-lg-3 col-md-6 p-4 text-white footer-links-wrapper">
             <FooterLinkHeader text="Information" />
             <div className="footer-links d-flex flex-column ">
-              <FooterLink text="Privacy Policy" />
-              <FooterLink text="Refund Policy" />
-              <FooterLink text="Shipping Policy" />
-              <FooterLink text="Blogs" />
+              <FooterLink text="Privacy Policy" to="/privacy-policy" />
+              <FooterLink text="Refund Policy" to="/refund-policy" />
+              <FooterLink text="Shipping Policy" to="/shipping-policy" />
+              <FooterLink text="Blogs" to="/blogs" />
             </div>
           </div>
           <div className="col-12 col-lg-3 col-md-6 p-4 text-white footer-links-wrapper">
             <FooterLinkHeader text="Account" />
             <div className="footer-links d-flex flex-column ">
               <FooterLink text="Search" />
-              <FooterLink text="About Us" />
+              <FooterLink text="About Us" to="/about" />
               <FooterLink text="Faq" />
-              <FooterLink text="Contact" />
+              <FooterLink text="Contact" to="/contact" />
             </div>
           </div>
           <div className="col-12 col-lg-3 col-md-6 p-4 text-white footer-links-wrapper">

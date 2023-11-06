@@ -1,0 +1,26 @@
+.single-blog-card{
+
+}
+.single-blog-card a{
+    color: var(--color-gray);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.single-blog-card .blog-post-date{
+    color: var(--color-gray);
+    margin-bottom: 30px;
+}
+.single-blog-card .title{
+    font-size: 24px;
+    font-weight: 600;
+    color: var( --color-dark-gray);
+}
+.single-blog-card p{
+    color: var(--color-gray);
+    font-size: 14px;
+}
+@media (max-width: 550px) {
+  .single-blog-left-side {
+    display: none;
+  }
+}

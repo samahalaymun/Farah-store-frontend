@@ -1,0 +1,6 @@
+.form-control {
+  background-color: var(--color-bg);
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}

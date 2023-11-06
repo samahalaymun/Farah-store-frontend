@@ -1,0 +1,9 @@
+p{
+    color: var(--color-gray);
+    margin-bottom: 20px;
+}
+h3{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
