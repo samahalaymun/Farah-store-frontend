@@ -54,23 +54,23 @@
 
 .checkout-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.25);
-  border-right:1px solid rgba(0, 0, 0, 0.25) ;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
   height: 100%;
   padding: 20px 60px 20px 100px;
   background-color: white;
 }
-.checkout-footer a{
+.checkout-footer a {
   color: var(--color-dark-gray);
   text-decoration: underline;
 }
 .checkout-cart-info-mobile {
   display: none;
 }
-.shipping-method{
+.shipping-method {
   padding: 15px;
-   border: 1px solid rgba(0, 0, 0, 0.25);
-   border-radius: 5px;
-   background-color: #e9ecef;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: #e9ecef;
 }
 @media (max-width: 1025px) {
   .checkout-left-side {
@@ -84,10 +84,10 @@
   }
 }
 @media (max-width: 766px) {
-    .header-wrapper {
-  background-color: white;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
-}
+  .header-wrapper {
+    background-color: white;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  }
   .checkout-footer {
     padding: 30px;
   }
@@ -112,7 +112,7 @@
   .checkout-cart-info-mobile {
     display: block;
   }
-  .accordion-icon{
+  .accordion-icon {
     margin-left: 5px;
   }
   .accordion-button:not(.collapsed) {
@@ -121,14 +121,21 @@
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
     font-size: 14px;
   }
-  .accordion-button:not(.collapsed) .accordion-icon {
+  .accordion-button[aria-expanded="true"] .accordion-icon {
     transform: rotate(180deg);
-    transition: transform 0.3s;
   }
+
+  .accordion-icon {
+    transition: all 0.3s ease;
+  }
+  /* .accordion-button.collapsed .accordion-icon {
+    transform: rotate(180deg);
+  } */
+
   .accordion-button {
     font-size: 14px;
     color: var(--color-dark-gray);
-    background-color:var(--color-bg);
+    background-color: var(--color-bg);
     padding: 30px !important;
     display: flex;
   }
@@ -145,11 +152,17 @@
     background-size: 0;
     margin-left: 0;
   }
-  .accordion-total{
+  .accordion-total {
     width: 100%;
     font-size: 16px;
     color: var(--color-dark-gray);
     font-size: 600;
+  }
+  .accordion-btn-text {
+    width: 70%;
+  }
+  .accordion-total {
+    width: 30%;
   }
 }
 
@@ -175,7 +188,7 @@
   .accordion-button {
     padding: 20px !important;
   }
-  .heading-title{
+  .heading-title {
     font-size: 16px;
   }
 }

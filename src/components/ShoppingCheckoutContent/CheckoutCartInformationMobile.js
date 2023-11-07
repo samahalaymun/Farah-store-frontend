@@ -13,14 +13,14 @@ function CheckoutCartInformationMobile() {
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
-              aria-expanded="true"
+              aria-expanded="false"
               aria-controls="collapseOne"
             >
-              <span className="w-75 ">
+              <span className=" accordion-btn-text">
                 Expand to see order summery
                 <IoIosArrowDown className="fs-5 accordion-icon" />
               </span>
-              <h5 className="accordion-total mb-0 w-25 text-end">NIS 32220</h5>
+              <h5 className="accordion-total mb-0 text-end">NIS 32220</h5>
             </button>
           </h2>
           <div
