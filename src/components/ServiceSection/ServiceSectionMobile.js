@@ -5,12 +5,24 @@ import { BsFillCarFrontFill } from "react-icons/bs";
 import { RiDoorLockLine } from "react-icons/ri";
 import { IoIosRefresh } from "react-icons/io";
 import { IoHelpBuoyOutline } from "react-icons/io5";
+import { services } from "../../Utils/Data";
 
 function ServiceSectionMobile() {
   return (
     <div className="mobile-services-carousel d-md-none">
-      <Carousel >
-        <div className="carousel-item active">
+      <Carousel>
+        {services.map((service, index) => {
+          return (
+            <div className={`carousel-item ${index === 0 ? "active" : ""}`}>
+              <ServiceCard
+                title={service.title}
+                description={service.tagLine}
+                icon={service.icon}
+              />
+            </div>
+          );
+        })}
+        {/* <div className="carousel-item active">
           <ServiceCard
             title="Free shipping"
             description="Free International shipping on all orders above 1000 NIS"
@@ -37,7 +49,7 @@ function ServiceSectionMobile() {
             description="We ensure secure payment with PEV"
             icon={<RiDoorLockLine className="fs-1" />}
           />
-        </div>
+        </div> */}
       </Carousel>
     </div>
   );

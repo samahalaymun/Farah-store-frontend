@@ -67,17 +67,13 @@ function HeaderUpper({ onNavCheck, isChecked}) {
                 </Link>
               </div>
               <div className="">
-                <Link to="/cart" className="d-flex align-items-center  gap-10 text-white header-upper-link">
+                <Link to="/cart" className="d-flex align-items-center position-relative 
+                  gap-10 text-white header-upper-link">
                   <img
                     src={process.env.PUBLIC_URL + "/images/cart.svg"}
                     alt="cart"
                   />
-                  <div className="d-flex flex-column gap-10">
-                    <span className="badge bg-white text-dark  ">0</span>
-                    <span className="total-amount mb-0 header-upper-link-text">
-                      &#8362;0
-                    </span>
-                  </div>
+                    <span className="badge rounded-circle  bg-white text-dark position-absolute" style={{top:"-5px",right:"-6px"}}>2</span>
                 </Link>
               </div>
             </div>

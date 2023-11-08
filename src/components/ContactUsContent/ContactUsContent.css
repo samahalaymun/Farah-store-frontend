@@ -13,8 +13,8 @@
 }
 .contact-form .form-control {
   background-color: var(--color-bg);
-  border-radius: 10px;
   padding: 10px;
+  border-radius: 5px;
 }
 .contact-info-card {
   color: var( --color-gray);

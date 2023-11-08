@@ -3,6 +3,7 @@ import {AiOutlineHome, AiOutlineMail} from "react-icons/ai"
 import { BsTelephone } from 'react-icons/bs';
 import {BiTimeFive} from "react-icons/bi";
 import ContactInfoCard from './ContactInfoCard';
+import Input from "../Common/Input/Input";
 
 function ContactUsForm() {
   return (
@@ -11,15 +12,14 @@ function ContactUsForm() {
         <h3 className="contact-title mb-4">Contact</h3>
         <form className="d-flex flex-column gap-20">
           <div>
-            <input type="text" className="form-control" placeholder="Name" />
+            <Input type="text" placeholder="Name" />
           </div>
           <div>
-            <input type="email" className="form-control" placeholder="Email" />
+            <Input type="email" placeholder="Email" />
           </div>
           <div>
-            <input
+            <Input
               type="tel"
-              className="form-control"
               placeholder="Mobile Number"
             />
           </div>
@@ -53,7 +53,10 @@ function ContactUsForm() {
             icon={<AiOutlineMail />}
             info=" info@farahstore.com"
           />
-          <ContactInfoCard icon={<BiTimeFive />} info=" Everyday 9:00 am-10:00 pm" />
+          <ContactInfoCard
+            icon={<BiTimeFive />}
+            info=" Everyday 9:00 am-10:00 pm"
+          />
         </div>
       </div>
     </div>

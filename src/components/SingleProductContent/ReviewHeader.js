@@ -10,7 +10,7 @@ function ReviewHeader({ orderedProduct }) {
         <h4 className="mb-2">Customer Reviews</h4>
         <div className="d-flex align-items-center  gap-10">
           <RatingComponent  id="rating" readOnly={true} value={3.5} />
-          <p className="mb-0">Based on 2 reviews</p>
+          <p className="mb-0">(10 reviews)</p>
         </div>
       </div>
       {orderedProduct && (

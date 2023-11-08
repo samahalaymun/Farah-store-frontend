@@ -62,7 +62,7 @@ export default function CheckoutForm() {
               <BsArrowLeftShort className="me-2" />
               Return to cart
             </Link>
-            <button className="btn-primary">Pay On Delivery</button>
+            <button className="btn-primary">Pay now</button>
           </div>
         </div>
       </form>
